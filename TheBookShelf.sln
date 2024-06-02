@@ -9,7 +9,7 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "thebookshelf.client", "theb
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4881A0A2-C800-4CD8-AFE5-6D320A5B4CB2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "front", "front", "{5214D651-D606-40AD-8FA8-4EE62D513CB4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{5214D651-D606-40AD-8FA8-4EE62D513CB4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBookShelf.Application", "TheBookShelf.Application\TheBookShelf.Application.csproj", "{8698161E-8E30-4832-81EF-AA722E01D2DC}"
 EndProject
