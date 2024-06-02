@@ -13,10 +13,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{5214D6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBookShelf.Application", "TheBookShelf.Application\TheBookShelf.Application.csproj", "{8698161E-8E30-4832-81EF-AA722E01D2DC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{56975699-1426-40CB-978A-0F4BBD7EC2AE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eng", "eng", "{56975699-1426-40CB-978A-0F4BBD7EC2AE}"
 	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
 		.gitignore = .gitignore
+		aks-cluster.tf = aks-cluster.tf
+		outputs.tf = outputs.tf
 		README.md = README.md
+		terraform.tfvars = terraform.tfvars
+		variables.tf = variables.tf
+		versions.tf = versions.tf
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A7CC5727-982C-44E2-A0F3-D802D26F8EA0}"
