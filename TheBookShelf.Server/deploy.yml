@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: thebookshelf-api-deployment
+  labels:
+    app: thebookshelf-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: thebookshelf-api
+  template:
+    metadata:
+      labels:
+        app: thebookshelf-api
+    spec:
+      containers:
+        - name: thebookshelf-api
+          image: leoginski/thebookshelfapi:1.0.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80

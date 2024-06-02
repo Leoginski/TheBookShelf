@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  thebookshelf.api:
+    image: ${DOCKER_REGISTRY-}thebookshelfapi
+    build:
+      context: .
+      dockerfile: TheBookShelf.Server/Dockerfile
