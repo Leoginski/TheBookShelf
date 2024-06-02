@@ -6,7 +6,7 @@ using TheBookShelf.Domain.Interfaces.Services;
 namespace TheBookShelf.Api.Controllers
 {
     [ApiController]
-    [Route("api/v1/[controller]")]
+    [Route("api/v1/[controller]s")]
     public class BookController : ControllerBase
     {
         private IBookService _service;
