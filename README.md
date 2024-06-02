@@ -1,5 +1,20 @@
 # TheBookShelf
 
+### About the Assessment
+What was done:
+* Project strucutre following Clean Architecture.
+* Code written using SOLID principles.
+* CRUD operations applying generics for reusable Service and Repository bases.
+* AKS privisioning using Terraform
+* K8S deployment yml for the API
+* README with instructions
+
+What is still missing (I can do it if more time is available):
+* Search endpoint applying pagination
+* AKS deployment for Frontend and Database
+* Modeling improvements for User's Loved Books
+* Implement Events for processing the Available Copies after Inserts and Updates
+
 ### Running Locally
 With the database up and running, check the ConnectionString and apply the migrations:
 
