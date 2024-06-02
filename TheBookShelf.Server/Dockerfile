@@ -9,9 +9,6 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-#COPY ["thebookshelf.client/nuget.config", "thebookshelf.client/"]
-#COPY ["thebookshelf.client/thebookshelf.client.esproj", "thebookshelf.client/"]
-
 COPY ["TheBookShelf.Server/TheBookShelf.Api.csproj", "TheBookShelf.Server/"]
 COPY ["TheBookShelf.Application/TheBookShelf.Application.csproj", "TheBookShelf.Application/"]
 COPY ["TheBookShelf.Domain/TheBookShelf.Domain.csproj", "TheBookShelf.Domain/"]
