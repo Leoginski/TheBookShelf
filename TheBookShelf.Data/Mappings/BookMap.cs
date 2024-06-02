@@ -8,9 +8,9 @@ namespace TheBookShelf.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {
-            builder.ToTable("books");
+            builder.ToTable("Books");
 
-            builder.HasKey(p => p.Id).HasName("book_id");
+            builder.HasKey(p => p.Id);
             builder.Property(p => p.Title).HasMaxLength(100).IsRequired(true);
             builder.Property(p => p.FirstName).HasMaxLength(50).IsRequired(true);
             builder.Property(p => p.LastName).HasMaxLength(50).IsRequired(true);

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBookShelf.Api", "TheBookShelf.Server\TheBookShelf.Api.csproj", "{6A09E897-EC64-4415-A422-049D1EDAD166}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBookShelf.Api", "TheBookShelf.Server\TheBookShelf.Api.csproj", "{6A09E897-EC64-4415-A422-049D1EDAD166}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "thebookshelf.client", "thebookshelf.client\thebookshelf.client.esproj", "{72D8532A-07F9-4372-BED1-A3D29BB5A967}"
 EndProject
@@ -11,15 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4881A0A2-C80
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "front", "front", "{5214D651-D606-40AD-8FA8-4EE62D513CB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBookShelf.Application", "TheBookShelf.Application\TheBookShelf.Application.csproj", "{8698161E-8E30-4832-81EF-AA722E01D2DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBookShelf.Application", "TheBookShelf.Application\TheBookShelf.Application.csproj", "{8698161E-8E30-4832-81EF-AA722E01D2DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{56975699-1426-40CB-978A-0F4BBD7EC2AE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A7CC5727-982C-44E2-A0F3-D802D26F8EA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBookShelf.Data", "TheBookShelf.Data\TheBookShelf.Data.csproj", "{FE7E5421-6809-4EC4-966D-5D98BD38E465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBookShelf.Data", "TheBookShelf.Data\TheBookShelf.Data.csproj", "{FE7E5421-6809-4EC4-966D-5D98BD38E465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBookShelf.Domain", "TheBookShelf.Domain\TheBookShelf.Domain.csproj", "{52256873-6F6F-4FF5-9240-10AA64311935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBookShelf.Domain", "TheBookShelf.Domain\TheBookShelf.Domain.csproj", "{52256873-6F6F-4FF5-9240-10AA64311935}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

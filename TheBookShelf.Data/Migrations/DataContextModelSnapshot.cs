@@ -69,10 +69,9 @@ namespace TheBookShelf.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("Id")
-                        .HasName("book_id");
+                    b.HasKey("Id");
 
-                    b.ToTable("books", (string)null);
+                    b.ToTable("Books", (string)null);
 
                     b.HasData(
                         new

@@ -11,7 +11,7 @@ using TheBookShelf.Data.Contexts;
 namespace TheBookShelf.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240602134630_InitialMigration")]
+    [Migration("20240602142757_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -72,10 +72,9 @@ namespace TheBookShelf.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("Id")
-                        .HasName("book_id");
+                    b.HasKey("Id");
 
-                    b.ToTable("books", (string)null);
+                    b.ToTable("Books", (string)null);
 
                     b.HasData(
                         new

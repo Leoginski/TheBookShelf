@@ -13,7 +13,7 @@ namespace TheBookShelf.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "books",
+                name: "Books",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -29,11 +29,11 @@ namespace TheBookShelf.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("book_id", x => x.Id);
+                    table.PrimaryKey("PK_Books", x => x.Id);
                 });
 
             migrationBuilder.InsertData(
-                table: "books",
+                table: "Books",
                 columns: new[] { "Id", "Category", "CopiesInUse", "FirstName", "Isbn", "LastName", "Title", "TotalCopies", "Type" },
                 values: new object[,]
                 {
@@ -52,12 +52,12 @@ namespace TheBookShelf.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "books",
+                table: "Books",
                 columns: new[] { "Id", "Category", "FirstName", "Isbn", "LastName", "Title", "TotalCopies", "Type" },
                 values: new object[] { 13, "Non-Fiction", "Harper", "9012345678", "Lee", "To Kill a Mockingbird", 20, "Paperback" });
 
             migrationBuilder.InsertData(
-                table: "books",
+                table: "Books",
                 columns: new[] { "Id", "Category", "CopiesInUse", "FirstName", "Isbn", "LastName", "Title", "TotalCopies", "Type" },
                 values: new object[] { 14, "Non-Fiction", 1, "J.D.", "0123456789", "Salinger", "The Catcher in the Rye", 10, "Hardcover" });
         }
@@ -66,7 +66,7 @@ namespace TheBookShelf.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "books");
+                name: "Books");
         }
     }
 }

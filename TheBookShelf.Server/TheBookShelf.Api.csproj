@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TheBookShelf.Application\TheBookShelf.Application.csproj" />
     <ProjectReference Include="..\thebookshelf.client\thebookshelf.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

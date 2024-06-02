@@ -1,8 +1,9 @@
-﻿namespace TheBookShelf.Domain.Entities
+﻿using TheBookShelf.Domain.Entities.Shared;
+
+namespace TheBookShelf.Domain.Entities
 {
-    public class Book()
+    public class Book : Entity
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
