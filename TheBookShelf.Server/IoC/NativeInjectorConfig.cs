@@ -11,7 +11,7 @@ namespace TheBookShelf.Api.IoC
     {
         public static void RegisterServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<DataContext>(options => options.UseSqlServer(configuration.GetConnectionString("DataContext")));
+            services.AddDbContext<DataContext>(options => options.UseSqlServer(configuration.GetConnectionString(nameof(DataContext))));
 
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<IBookService, BookService>();

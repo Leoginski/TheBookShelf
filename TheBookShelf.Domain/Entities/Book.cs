@@ -12,5 +12,6 @@ namespace TheBookShelf.Domain.Entities
         public string Type { get; set; }
         public string Isbn { get; set; }
         public string Category { get; set; }
+        public bool Loved { get; set; }
     }
 }

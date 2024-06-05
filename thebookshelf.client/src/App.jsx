@@ -17,7 +17,7 @@ function App() {
                 <select id="searchType">
                     <option value="author">Author</option>
                     <option value="isbn">ISBN</option>
-                    <option value="love">Love</option>
+                    <option value="loved">Loved</option>
                 </select>
             </label>
 
@@ -68,7 +68,7 @@ function App() {
     );
 
     async function populateBookData() {
-        let url = 'api/v1/books';
+        let url = 'api/v1/books/search';
 
         const searchType = document.getElementById('searchType');
         const searchValue = document.getElementById('searchValue');

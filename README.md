@@ -18,9 +18,14 @@ What is still missing (I can do it if more time is available):
 ### Running Locally
 With the database up and running, check the ConnectionString and apply the migrations:
 
+Create the InitialMigration
+```
+dotnet ef migrations add InitialMigration -s ../TheBookShelf.Server/TheBookShelf.Api.csproj -v -c DataContext
+```
+
 Update the Database:
 ```
-dotnet ef database update -s /TheBookShelf.Server/TheBookShelf.Api.csproj -v -c DataContext
+dotnet ef database update -s ../TheBookShelf.Server/TheBookShelf.Api.csproj -v -c DataContext
 ```
 
 ### Infrastructure

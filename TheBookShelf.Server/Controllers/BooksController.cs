@@ -6,12 +6,24 @@ using TheBookShelf.Domain.Interfaces.Services;
 namespace TheBookShelf.Api.Controllers
 {
     [ApiController]
-    [Route("api/v1/[controller]s")]
-    public class BookController : ControllerBase
+    [Route("api/v1/[controller]")]
+    public class BooksController : ControllerBase
     {
         private IBookService _service;
 
-        public BookController(IBookService BookService) => _service = BookService;
+        public BooksController(IBookService BookService) => _service = BookService;
+
+
+        [HttpGet("Search")]
+        [ProducesResponseType(typeof(IEnumerable<BookResponse>), StatusCodes.Status200OK)]
+        public async Task<ActionResult<IEnumerable<BookResponse>>> SearchAsync(string? author, string? isbn, bool? loved, int pageSize = 10, int pageOffset = 1)
+        {
+            var Books = await _service.SearchAsync(author, isbn, loved, pageSize, pageOffset);
+
+            var BooksResponse = Books.Select(BookResponse.ToResponse);
+
+            return Ok(BooksResponse);
+        }
 
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<BookResponse>), StatusCodes.Status200OK)]

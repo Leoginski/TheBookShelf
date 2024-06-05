@@ -13,6 +13,7 @@ namespace TheBookShelf.Application.DTOs.Responses
         public string Type { get; set; }
         public string Isbn { get; set; }
         public string Category { get; set; }
+        public bool Loved { get; set; }
 
         public BookResponse()
         {
@@ -30,7 +31,8 @@ namespace TheBookShelf.Application.DTOs.Responses
                 CopiesInUse = entity.CopiesInUse,
                 Type = entity.Type,
                 Isbn = entity.Isbn,
-                Category = entity.Category
+                Category = entity.Category,
+                Loved = entity.Loved,
             };
         }
     }
