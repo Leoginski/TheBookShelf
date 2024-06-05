@@ -1,4 +1,5 @@
-﻿using TheBookShelf.Domain.Entities.Shared;
+﻿using TheBookShelf.Domain.Entities;
+using TheBookShelf.Domain.Entities.Shared;
 
 namespace TheBookShelf.Domain.Interfaces.Repositories.Shared
 {

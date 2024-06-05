@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eng", "eng", "{56975699-142
 		.gitignore = .gitignore
 		aks-cluster.tf = aks-cluster.tf
 		outputs.tf = outputs.tf
+		docker-compose.yml = docker-compose.yml
 		README.md = README.md
 		terraform.tfvars = terraform.tfvars
 		variables.tf = variables.tf

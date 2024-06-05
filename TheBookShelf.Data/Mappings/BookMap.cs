@@ -19,6 +19,7 @@ namespace TheBookShelf.Data.Mappings
             builder.Property(p => p.Type).HasMaxLength(50);
             builder.Property(p => p.Isbn).HasMaxLength(80);
             builder.Property(p => p.Category).HasMaxLength(50);
+            builder.Property(p => p.Loved).HasDefaultValue(false);
 
             builder.HasData(
                 new Book
