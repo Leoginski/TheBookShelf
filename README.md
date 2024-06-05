@@ -8,9 +8,9 @@ What was done:
 * AKS privisioning using Terraform
 * K8S deployment yml for the API
 * README with instructions
-
-What is still missing (I can do it if more time is available):
 * Search endpoint applying pagination
+
+What is still missing:
 * AKS deployment for Frontend and Database
 * Modeling improvements for User's Loved Books
 * Implement Events for processing the Available Copies after Inserts and Updates
